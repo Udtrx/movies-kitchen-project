@@ -1,0 +1,307 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">  
+<!-- BACK --> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- FEUILLES CSS -->
+        <link rel="stylesheet" href="/CSS/reset.css">
+        <link rel="stylesheet" href="/CSS/common_elements.css">
+        <link rel="stylesheet" href="/CSS/style_recipe.css">
+        <link rel="stylesheet" href="/CSS/slider.css">
+        <link rel="stylesheet" href="/CSS/hover.css">
+        <link rel="stylesheet" href="/CSS/up_btn.css">
+        <link rel="stylesheet" href="/CSS/@mediaquerry.css">
+        <link rel="stylesheet" href="/CSS/@mediaquerry_recp.css">
+
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,700;1,400&family=Holtwood+One+SC&family=Inter:wght@300;400;600&family=Quicksand&display=swap" rel="stylesheet">
+
+        <title>Retour vers le futur</title> 
+    </head>
+
+<!-- FRONT -->
+    <body>
+        
+        <!-- HEADER -->
+        <header class="header">
+
+            <a href="index.html"><img id="logo" src="/images/ico/logo.png"></a>
+        
+            <h1 id="site-title" href="index.html">MOVIE KITCHEN</h1>
+
+            <div>
+                <input id="toggle" type="checkbox"></input>
+
+                <label for="toggle" class="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </label>
+
+            <div class="nav">
+                <div class="nav-wrapper">
+                    <nav>
+                        <a href="entree.html">ENTRÉES</a><br>
+                        <a href="plats.html">PLATS</a><br>
+                        <a href="dessert.html">DESSERTS</a><br>
+                        <a href="boissons.html">BOISSON</a>
+                    </nav>
+                </div>
+                
+            </div>
+                     
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- ***TOP KITCHEN ICO **************************************************************-->
+            <div id="top-kitchen">
+            <img src="/images/ico/kitchen_top_x2.png" alt="étagère du haut">
+            </div>
+
+            <!-- [RECIPES PART] ---------------------------------------------------------------->           
+            <section class="recipe_section">
+
+                <!-- BLUE FRAME  -------------------------------------->
+                <article class="recipe_box">
+
+                     <!-- INSIDE BLUE FRAME  ---------------->
+                    <div class="recipe_content_box">
+
+                        <!-- TITLE RECIPE ----->
+                        <h1 class="recipe_title"> <span class="color_h1_catg"> BOISSONS </span> &#124 LE THE GLACE DE RETOUR VERS LE FUTUR III</h1>
+
+                        <!-- CINE PICTURE ------------->
+                        <div class="recipe_top_img_box">
+                            <img src="/images/cinellustration/desk/cine_back_futur_screen.jpg" alt="Retour vers le futur">
+                        </div>
+
+                        <!-- NOTICE RECIPE-->
+                        <div class="recipe_notice_box">
+                            
+                            <!-- |navbar notice -->
+                            <div class="notice_top_bar">
+
+                                <!-- |Bouton ingrédient -->
+
+                                <button class="notice_title_box" id="ingredients_title_box" style="display:none">
+                                    <h2 class="notice_title" id="ingredients_title" style="display:none">INGREDIENTS</h2>
+                                </button>
+                                
+                                <button class="notice_title_box" id="ingredients_title_box_select">
+                                    <h2 class="notice_title" id="ingredients_title_select" >INGREDIENTS</h2>
+                                </button>
+                                
+                                <!-- |Bouton préparation -->
+                                <button class="notice_title_box" id="preparation_title_box" >
+                                    <h2 class="notice_title" id="preparation_title">PREPARATION</h2>
+                                </button>
+
+                                <button class="notice_title_box" id="preparation_title_box_select" style="display:none">
+                                    <h2 class="notice_title" id="preparation_title_select" style="display:none">PREPARATION</h2>
+                                </button>
+
+
+
+                                <!-- desactivé pour le moment
+                                <div class="notice_title_box" id="ustensiles_title_box">
+                                    <h2 class="notice_title" id="ustensiles_title">USTENSILES</h2>
+                                </div> -->
+    
+                            </div>
+
+                            <div class="notice_content">
+
+                                <div class="ingredients_box" >
+
+                                    <div class="quantity">
+                                            <p>
+                                                POUR 6 PERSONNE
+                                            </p>
+                                    </div>
+
+                                    <div class="ingredient_text">
+
+                                    <!-- l1 -->
+                                    <p class="bold_recipe"> POUR LE THE GLACE:
+                                        <br>
+                                        <br>
+                                    </p>
+
+                                    <div class="ingredient_tab_text">
+                                        <div class="tab_text_1">
+                                            <p>
+                                                2 sachets de thé (arômes au choix)
+                                            <br>
+                                                1 sachet de thé vert
+                                            <br>
+                                                1 citron
+                                            </p>
+                                        </div>
+
+                                        <div class="tab_text_2">
+                                            <p> 
+                                               2 cuillères à soupe de sucre
+                                               <br> 
+                                                Feuilles de menthe
+                                               <br>
+                                                1 L d'eau
+                                               </p>
+                                                 
+                                            </div>
+
+                                    </div>
+                                    
+                                    <!-- l2 -->
+                    
+                                    <!-- l3 -->
+                                                                                                          
+                                </div>
+                        
+                            </div>
+                                <div class="preparation_box" style="display: none">
+
+                                    <div class="time_prepa">
+                                    <p>Temps total : 6 h 20mn
+                                    <br>
+                                   </p>
+                                    </div>
+
+                                
+                                    <div class="preparation_text">
+                                
+                                    <p> 
+                                    1. Dans une casserole, faire bouillir un litre d'eau avec les sachets de thé. Laisser infuser entre 10 et 15 min.
+                                    <br>
+                                    <br>
+                                    2. Ajouter une cuillère de sucre, le jus d'un demi-citron et l'autre mooitié coupée en quartier ou en tranches.
+                                    <br>
+                                    <br>
+                                    3. Laisser refroidir au réfrigérateur pendant au moins 6 heures. 
+                                    <br>
+                                    <br>
+                                    4 Avant de servir, déposer quelques feuilles de menthe. 
+                                
+                                    </div>
+                                
+                                </div>
+
+                                <!-- desactivé pour le moment
+                                <div class="ustentiles_box"></div>
+                                 -->  
+
+                                <div class="recipe_bottom_img">
+                                <img src="images/plats/desk/the_glace_doc_table.jpg" alt="thé glaçé">
+                                </div>
+                            </div>                            
+    
+                        </div>
+
+                        <!-- MOVIR RECIPE--> 
+                        <div class="movie_box">
+
+                            <div class="movie_top_bar">
+    
+                                <div class="movie_title_box">
+                                    <h2 class="movie_title">LE FILM</h2>
+                                </div>
+    
+
+                            </div>
+
+                            <div class="movie_content">
+                                <div class="movie_video">
+                                    <iframe width="90%" height="500" src="https://www.youtube.com/embed/wIdJE5MIPaQ?si=fqQSE2Zp__hinUrT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+
+                                <div class="movie_info_button">
+                                    <button id="movie_info_button_open" style="display:none;">&#x23F7;  en savoir +</button>
+
+                                    <button id="movie_info_button_closed">&#9205; en savoir +</button>
+                                </div>
+
+                                <div class="movie_infos" style="display:none;">
+
+                                    <div class="movie_infos_container">
+
+                                   
+                                        <div class="movie_infos_line_1">
+
+
+                                        <p> 
+                                            <span class="movie_infos_bold">Titre:</span> "Retour vers le futur III" (<span class="movie_infos_italic">"Back to the Future III")</span>
+                                            <br>
+                                            <span class="movie_infos_bold">Année :</span> 1990
+                                            <br>
+                                            <span class="movie_infos_bold">Genre :</span> aventure, comédie, science-fiction
+                                        </p>
+
+                                        <div class="imdb_box">
+                                            <img id="imdb_logo" src="/images/ico/IMDB_Logo_small.png" href="https://www.imdb.com/title/tt0099088/?ref_=nv_sr_srsg_6_tt_8_nm_0_q_retour%2520vers%2520le%2520">
+                                        </div>
+                             
+                                        </div>
+
+                                        <p>
+                                        <br>
+                                        <span class="movie_infos_bold"> Réalisation:</span> Robert Zemeckis
+                                        <br>
+                                        <span class="movie_infos_bold">Scénario:</span> Robert Zemeckis, Bob Gale
+                                        <br>
+                                        <span class="movie_infos_bold">Casting:</span> Michael J. Fox, Christopher Lloyd, Mary Steenburgen
+                                        <br>
+                                        <br>
+                                        <span class="movie_infos_bold">Synopsis:</span>
+                                        <br>
+                                        "Savourant une existence paisible en 1885, le docteur Emmet Brown est sur le point d'être tué par Buford ""Mad Dog"" Tannen. Marty McFly revient alors dans le passé pour sauver son ami."
+                                    </div>
+
+                                </div>
+                            </div>
+    
+
+    
+                        </div>
+                                  
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- CUTLERY TRANSITION ---------------------------------------------------------->
+            <div class="cutlery_trans">
+                <img src="images/ico/ico_spoon.png">
+            </div>
+
+
+
+
+            
+        </main>
+
+        <!-- Btn "BACK TO UP" -->   
+        <div class="up_btn">
+            <img src="/images/ico/arrow-up-solid-1.svg" alt="" class="icone_up_btn">
+        </div>
+
+        <!-- FOOTER -->       
+        <footer>
+        <p class="footer-items">A propos</p>>
+        <p class="footer-items">|</p>
+        <p class="footer-items">Mention légales</p>
+        </footer>
+
+        <!-- SCRIPT JS ----------------->   
+        <script src="JS/up_btn.js"></script>
+        <script src="JS/recipe_switch.js"></script>
+
+    </body>
+
+</html>

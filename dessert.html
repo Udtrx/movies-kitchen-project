@@ -1,0 +1,150 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">  
+<!-- BACK --> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- FEUILLES CSS -->
+        <link rel="stylesheet" href="/CSS/reset.css">
+        <link rel="stylesheet" href="/CSS/common_elements.css">
+        <link rel="stylesheet" href="/CSS/style_catg.css">
+        <link rel="stylesheet" href="/CSS/slider.css">
+        <link rel="stylesheet" href="/CSS/hover.css">
+        <link rel="stylesheet" href="/CSS/up_btn.css">        
+        <link rel="stylesheet" href="/CSS/@mediaquerry.css">
+        <link rel="stylesheet" href="/CSS/@mediaquerry_cat.css">
+
+
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,700;1,400&family=Holtwood+One+SC&family=Inter:wght@300;400;600&family=Quicksand&display=swap" rel="stylesheet">
+
+        <title>DESSERTS /MOVIE KITCHEN</title> 
+    </head>
+
+<!-- FRONT -->
+    <body>
+        
+        <!-- HEADER -->
+        <header class="header">
+
+            <a href="index.html"><img id="logo" src="/images/ico/logo.png"></a>
+        
+            <h1 id="site-title" href="index.html">MOVIE KITCHEN</h1>
+
+            <div>
+                <input id="toggle" type="checkbox"></input>
+
+                <label for="toggle" class="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </label>
+
+            <div class="nav">
+                <div class="nav-wrapper">
+                    <nav>
+                        <a href="entree.html">ENTRÉES</a><br>
+                        <a href="plats.html">PLATS</a><br>
+                        <a href="dessert.html">DESSERTS</a><br>
+                        <a href="boissons.html">BOISSON</a>
+                    </nav>
+                </div>
+                
+            </div>
+                     
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- ***TOP KITCHEN ICO **************************************************************-->
+            <div id="top-kitchen">
+            <img src="images/ico/kitchen_top_x2.png" alt="étagère du haut">
+            </div>
+
+            <!-- [ENTRANCE PART] ----------------------------------------------------------------->
+            <section id="entrance_section">
+            
+                <!--- CATEGORIE TITLE ------------------------>
+                <h1 id="entrance_section_title"> LES DESSERTS</h1>
+   
+                <!--- PHOTOGRAMMES LINE ------------------>
+                <div id="dishes_line"> 
+
+                    <!-- PHOTOGRAMME 1----->
+                    <div class="dishes_bloc">
+
+                        <img class="dishes_picture"src="images/photogrammes/vignette_bronzes.jpg" alt="Les bronzés font du ski">
+                       
+                        <a class="dishes_btn" href="dessert_bronzes.html">La crêpe au suc' </a>
+                        
+
+                    </div>
+
+                    <!-- PHOTOGRAMME 2 ----->
+                    <div class="dishes_bloc">
+
+                        <img class="dishes_picture" src="images/photogrammes/vignette_simpsons.jpg" alt="Les Simpsons">
+
+                        <a class="dishes_btn" href="dessert_simpsons.html">Les donuts d'Homer </a>
+
+                    </div>
+
+                    <!-- PHOTOGRAMME 3 ----->
+                    <div class="dishes_bloc">
+
+                        <img class="dishes_picture" src="images/photogrammes/vignette_peau_ane.jpg" alt="Peau d'âne">
+                        
+                        <a class="dishes_btn" href="dessert_peau_d_ane.html">Le cake d'amour </a>
+
+                    </div>
+
+                    <!-- PHOTOGRAMME 4----->
+                    <div class="dishes_bloc">
+
+                        <img class="dishes_picture" src="images/photogrammes/vignette_asterix.jpg" alt="Asterix et Cléopatre">
+
+                        <a class="dishes_btn" href="dessert_asterix.html">Le pudding à l'arsenic</a>
+                        
+                    </div>
+
+
+
+
+
+                </div>
+            
+                <!--- ***BOTTOM KITCHEN ICO ******************************************-->
+                <div id="bottom_kitchen">
+                    <img src="images/ico/kitchen_bottom_x2.png" alt="">
+                </div>
+
+            </section>
+
+            
+        </main>
+
+        <!-- Btn "BACK TO UP" -->   
+        <div class="up_btn">
+            <img src="images/ico/arrow-up-solid-1.svg" alt="" class="icone_up_btn">
+        </div>
+
+        <!-- FOOTER -->       
+        <footer>
+        <p class="footer-items">A propos</p>>
+        <p class="footer-items">|</p>
+        <p class="footer-items">Mention légales</p>
+        </footer>
+
+        <!-- SCRIPT JS ----------------->   
+        
+        <script src="JS/recipe_switch.js"></script>
+        <script src="JS/up_btn.js"></script>
+
+    </body>
+
+</html>

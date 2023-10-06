@@ -1,0 +1,56 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* ruleset for 320px - 480px */
+
+    header {
+        height: 4rem;
+    }
+
+    #logo {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+
+      #site-title {
+        font-size: 2em;
+        padding-right: 1em;
+        margin-right: 1rem;
+        
+    }
+    .hamburger {
+        right: 9%;
+        top: 2%;
+        width: 2em;
+        margin-right: 1em;
+      }
+    .hamburger div {
+        width: 2em;
+        margin-top: 4px;
+        margin-right: 4px;
+
+      }
+    nav{
+        position: relative;
+        margin-left: 20%;
+        top: 4%;
+    }
+    .nav {
+        width: 51%;
+        height: 26%;
+        left: 40%;
+      }
+
+    #top-kitchen {
+        display: none;
+    }
+
+    .up_btn{
+        height: 50px;
+        width: 50px;
+    }
+    
+    
+    .icone_up_btn{
+        width: 30px;
+    }
+
+}
