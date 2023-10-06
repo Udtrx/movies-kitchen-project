@@ -1,0 +1,138 @@
+/* */
+body{
+}
+h1 {
+  font-family: 'Holtwood One SC', serif;
+}
+h2 {
+  font-family: 'Inter', sans-serif;
+}
+p {font-family: 'Quicksand', sans-serif;}
+
+/* HEADER */
+header {
+    background-color:#03071E;
+    display: flex;
+    justify-content: space-between;/*A MODIFIER*/
+    align-items: center;
+    padding: 2%;
+    height: 1.875em;
+}
+#logo {
+  width: 4.375em;
+  height: 4.375em;
+}
+#site-title {
+    color: #FFBA08;
+    font-family: oswald ;
+    font-size: 2.5em;
+}
+
+/*NAV ET HAMBURGER*/
+#toggle {
+  display: none;
+}
+/**
+  Hamburger
+**/
+.hamburger {
+  position: absolute;
+  top: 5em;
+  right: 5%;
+  top: 3%;
+  width: 2em;
+  height: 2.813rem;
+  z-index: 5;
+}
+.hamburger div {
+  position: relative;
+  width: 3em;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #FFBA08;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+/**
+Nav Styles
+**/
+.nav {
+  position: absolute;
+  width: 15%;
+  height: 26%;
+  background-color: #03071E;
+  border: solid #FFBA08 1px;
+  border-radius: 10px 0 10px 10px;
+  top: -100%; left: 78%; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;;
+}
+nav {
+  text-align: left;
+  margin-left: 25%;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #FFBA08;
+  font-size: 1.5em;
+  display: inline-block;
+  margin-top: 1.25em;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+nav a:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: rgb(214, 135, 17);
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+  color: white;
+}
+nav a:hover:before {
+  height: 100%;
+}
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+/* FOOTER */
+footer { 
+  background-color : #03071E ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.375em;
+}
+.footer-items{ 
+color: #FFBA08;
+font-family: oswald ;
+margin: 0.5em;
+}

@@ -1,0 +1,356 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">  
+<!-- BACK --> 
+    <head>
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- FEUILLES CSS -->
+        <link rel="stylesheet" href="/CSS/reset.css">
+        <link rel="stylesheet" href="/CSS/common_elements.css">
+        <link rel="stylesheet" href="/CSS/style_recipe.css">
+        <link rel="stylesheet" href="/CSS/slider.css">
+        <link rel="stylesheet" href="/CSS/hover.css">
+        <link rel="stylesheet" href="/CSS/up_btn.css">
+
+
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,700;1,400&family=Holtwood+One+SC&family=Inter:wght@300;400;600&family=Quicksand&display=swap" rel="stylesheet">
+
+        <title>Astérix et Cléopatre</title> 
+    </head>
+
+<!-- FRONT -->
+    <body>
+        
+        <!-- HEADER -->
+        <header class="header">
+
+            <a href="index.html"><img id="logo" src="/images/ico/logo.png"></a>
+        
+            <h1 id="site-title" href="index.html">MOVIE KITCHEN</h1>
+
+            <div>
+                <input id="toggle" type="checkbox"></input>
+
+                <label for="toggle" class="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </label>
+
+            <div class="nav">
+                <div class="nav-wrapper">
+                    <nav>
+                        <a href="entree.html">ENTRÉES</a><br>
+                        <a href="plats.html">PLATS</a><br>
+                        <a href="dessert.html">DESSERTS</a><br>
+                        <a href="boissons.html">BOISSON</a>
+                    </nav>
+                </div>
+                
+            </div>
+                     
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- ***TOP KITCHEN ICO **************************************************************-->
+            <div id="top-kitchen">
+            <img src="images/ico/kitchen_top_x2.png" alt="étagère du haut">
+            </div>
+
+            <!-- [RECIPES PART] ---------------------------------------------------------------->           
+            <section class="recipe_section">
+
+                <!-- BLUE FRAME  -------------------------------------->
+                <article class="recipe_box">
+
+                     <!-- INSIDE BLUE FRAME  ---------------->
+                    <div class="recipe_content_box">
+
+                        <!-- TITLE RECIPE ----->
+                        <h1 class="recipe_title"> <span class="color_h1_catg"> DESSERT </span> &#124 LE PUDDING A L'ARSENIC</h1>
+
+                        <!-- CINE PICTURE ------------->
+                        <div class="recipe_top_img_box">
+                            <img src="images/cinellustration/desk/cine_asterix_screen.jpg" alt="Astérix et cléopatre" id="Asterix">
+                        </div>
+
+                        <!-- NOTICE RECIPE-->
+                        <div class="recipe_notice_box">
+                            
+                            <!-- |navbar notice -->
+                            <div class="notice_top_bar">
+
+                                <!-- |Bouton ingrédient -->
+
+                                <button class="notice_title_box" id="ingredients_title_box" style="display:none">
+                                    <h2 class="notice_title" id="ingredients_title" style="display:none">INGREDIENTS</h2>
+                                </button>
+                                
+                                <button class="notice_title_box" id="ingredients_title_box_select">
+                                    <h2 class="notice_title" id="ingredients_title_select" >INGREDIENTS</h2>
+                                </button>
+                                
+                                <!-- |Bouton préparation -->
+                                <button class="notice_title_box" id="preparation_title_box" >
+                                    <h2 class="notice_title" id="preparation_title">PREPARATION</h2>
+                                </button>
+
+                                <button class="notice_title_box" id="preparation_title_box_select" style="display:none">
+                                    <h2 class="notice_title" id="preparation_title_select" style="display:none">PREPARATION</h2>
+                                </button>
+
+
+
+                                <!-- desactivé pour le moment
+                                <div class="notice_title_box" id="ustensiles_title_box">
+                                    <h2 class="notice_title" id="ustensiles_title">USTENSILES</h2>
+                                </div> -->
+    
+                            </div>
+
+                            <div class="notice_content">
+
+                                <div class="ingredients_box" >
+
+                                    <div class="quantity">
+                                            <p>
+                                                POUR 4 PERSONNES
+                                            </p>
+                                    </div>
+
+                                    <div class="ingredient_text">
+
+                                        <!-- l1 --> <!--
+                                        <p class="bold_recipe"> POUR LES PÂTES :
+                                            <br>
+                                            <br>
+                                        </p> -->
+
+                                        <div class="ingredient_tab_text">
+                                            <div class="tab_text_1">
+                                                <p>
+                                                    1 grand bol de strychnine
+                                                    <br>
+                                                    1 cuillère à soupe de morphine
+                                                    <br>
+                                                    1 à 2 verres de pétrole
+                                                    <br>
+                                                    quelques gouttes de ciguë
+                                                    <br>
+                                                    1 verre à vin de bave de sangsue
+                                                    <br>
+                                                    1 scorpion
+                                                    <br>
+                                                    1 dose d'arsenic
+                                                    <br>
+                                                    1 verre de narcotique
+                                                </p>
+                                            </div>
+
+                                            <div class="tab_text_2">
+                                                <p>
+                                                    2 cuillères à soupe de purgatif
+                                                    <br>
+                                                    1 dé à coudre de sang de lézard
+                                                    <br>
+                                                    un peu de mort au rat
+                                                    <br>
+                                                    2 doses de venin de cobra
+                                                    <br>
+                                                    3 quartiers d'orange
+                                                    <br>
+                                                    2 poignées de fruits confits
+                                                    <br>
+                                                    du vert-de-gris
+                                                    <br>
+                                                    du vitriole (facultatif)
+                                                    
+                                                </p>
+
+                                            </div>
+
+                                        </div>
+                                                                                                       
+                                    </div>
+                        
+                                </div>
+
+                                <div class="preparation_box" style="display: none">
+
+                                    <div class="time_prepa">
+                                    <p>Temps total : 20mn
+                                    <br>
+                                    <br>
+                                    Préparation : 5mn <!-- &#124; Repos : 1H --> &#124;  Cuisson : 15mn</p>
+                                    </div>
+
+                                    <div class="preparation_text">
+                                
+                                        <p>
+                                            1. Prendre un grand bol de strychnine et y délayer de la morphine. Verser dans un chaudron et mélanger.
+                                            <br>
+                                            <br>
+                                            2. Faire tiédir à la casserole un bon verre de pétrole (personnellement j'en mets deux). Verser dans le chaudron et mélanger.
+                                            <br>
+                                            <br>
+                                            3. Ajouter quelques gouttes de ciguë et de la bave de sangsue, puis mélanger
+                                            <br>
+                                            <br>
+                                            4. À l'aide d'un couteau bien aiguisé, émincez un scorpion très fin et l'ajouter
+                                            <br>
+                                            <br>
+                                            5. Émiettez l'arsenic dans le verre de narcotique et l'ajoutez dans le chaudron.
+                                            <br>
+                                            <br>
+                                            6. Faire bouillir le purgatif à feu vif avant de l'ajouter (on peut monter jusqu'à 3 cuillères !). L'ajouter au mélange
+                                            <br>
+                                            <br>
+                                            7. Dans un petit plat à part, faire tiédir le sang de lézard et le verser dans le chaudron.
+                                            <br>
+                                            <br>
+                                            8 Verser la mort au rat dans le venin de cobra puis ajouter le jus de 3 quartiers d'orange (je préfère personnellement avec un seul). Bien mélanger avant de le verser dans le chaudron.
+                                            <br>
+                                            <br>
+                                            9. Mettre les fruits confits à moisir dans le vert-de-gris puis, tant que la pâte est molle, décorer le pudding avec.
+                                            <br>
+                                            <br>
+                                            10. Mélanger à nouveau avec une louche très résistante (sinon elle fond) !
+                                            <br>
+                                            <br>
+                                            11. Pour les plus gourmands, ajouter un peu vitriole !
+                                            <br>
+                                            <br>
+                                            12 Laisser mijoter à feu vif le temps de faire un tour de table en dansant, verser la pâte dans un grand moule à charlotte puis démouler immédiatement sur une assiette.
+                                            <br>
+                                            <br>
+                                            <br>
+                                            A noter: En cas de digestion difficile, prévoir une cuillerée de bicarbonate à diluer dans un grand verre d'eau ou l'intervention d'un ami druide.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- desactivé pour le moment
+                                <div class="ustentiles_box"></div>
+                                 -->  
+
+                                <div class="recipe_bottom_img">
+                                <img src="images/plats/desk/poudding-arsenic_table.jpg" alt="Le pudding à l'arsenic">
+                                </div>
+                            </div>                            
+    
+                        </div>
+
+                        <!-- MOVIR RECIPE--> 
+                        <div class="movie_box">
+
+                            <div class="movie_top_bar">
+    
+                                <div class="movie_title_box">
+                                    <h2 class="movie_title">LE FILM</h2>
+                                </div>
+    
+
+                            </div>
+
+                            <div class="movie_content">
+                                <div class="movie_video">
+                                    <iframe width="90%" height="500" src="https://www.youtube.com/embed/dn2vyORpuyw?si=dOIc-qkuUAlbPeES&amp;start=43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+
+                                <div class="movie_info_button">
+                                    <button id="movie_info_button_open" style="display:none;">&#x23F7;  en savoir +</button>
+
+                                    <button id="movie_info_button_closed">&#9205; en savoir +</button>
+                                </div>
+
+                                <div class="movie_infos" style="display:none;">
+
+                                    <div class="movie_infos_container">
+
+                                   
+                                        <div class="movie_infos_line_1">
+
+
+                                        <p> 
+                                            <span class="movie_infos_bold">Titre:</span> "Astérix et Cléopâtre" <!-- (<span class="movie_infos_italic">"Lady and the Tramp")</span> -->
+                                            <br>
+                                            <span class="movie_infos_bold">Année :</span> 1968
+                                            <br>
+                                            <span class="movie_infos_bold">Genre :</span> animation, aventure, comédie
+                                        </p>
+
+                                        <div class="imdb_box">
+                                            <img id="imdb_logo" src="images/ico/IMDB_Logo_small.png" href="https://www.imdb.com/title/tt0048280/?ref_=fn_al_tt_1">
+                                        </div>
+                             
+                                        </div>
+
+                                        <p>
+                                            <br>
+                                            <span class="movie_infos_bold"> Réalisation:</span> René Goscinny, Albert Uderzo
+                                            <br>
+                                            <span class="movie_infos_bold">Scénario:</span> René Goscinny, Albert Uderzo
+                                            <br>
+                                            <span class="movie_infos_bold">Casting:</span> Roger Carel, Jacques Morel, Micheline Dax
+                                            <br>
+                                            <br>
+                                            <span class="movie_infos_bold">Synopsis:</span>
+                                            <br>
+                                            Provoquée, Cléopâtre parie à César, qu'elle pourra construire un grand palais en 3 mois. Un architecte a 3 mois ou bien... Heureusement, Panoramix, Asterix et Obelix viennent à Alexandrie pour donner de l'aide.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+    
+
+    
+                        </div>
+                                  
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- CUTLERY TRANSITION ---------------------------------------------------------->
+            <div class="cutlery_trans">
+                <img src="images/ico/ico_spoon.png">
+            </div>
+
+
+
+
+            
+        </main>
+
+        <!-- Btn "BACK TO UP" -->   
+        <div class="up_btn">
+            <img src="images/ico/arrow-up-solid-1.svg" alt="" class="icone_up_btn">
+        </div>
+
+        <!-- FOOTER -->       
+        <footer>
+        <p class="footer-items">A propos</p>>
+        <p class="footer-items">|</p>
+        <p class="footer-items">Mention légales</p>
+        </footer>
+
+        <!-- SCRIPT JS ----------------->   
+        <script src="JS/up_btn.js"></script>
+        <script src="JS/recipe_switch.js"></script>
+
+    </body>
+
+</html>

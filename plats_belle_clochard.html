@@ -1,0 +1,392 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">  
+<!-- BACK --> 
+    <head>
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- FEUILLES CSS -->
+        <link rel="stylesheet" href="/CSS/reset.css">
+        <link rel="stylesheet" href="/CSS/common_elements.css">
+        <link rel="stylesheet" href="/CSS/style_recipe.css">
+        <link rel="stylesheet" href="/CSS/slider.css">
+        <link rel="stylesheet" href="/CSS/hover.css">
+        <link rel="stylesheet" href="/CSS/up_btn.css">
+        <link rel="stylesheet" href="/CSS/@mediaquerry.css">
+        <link rel="stylesheet" href="/CSS/@mediaquerry_recp.css">
+
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,700;1,400&family=Holtwood+One+SC&family=Inter:wght@300;400;600&family=Quicksand&display=swap" rel="stylesheet">
+
+        <title>La belle et le clochard</title> 
+
+    </head>
+
+<!-- FRONT -->
+    <body>
+        
+        <!-- HEADER -->
+        <header class="header">
+
+            <a href="index.html"><img id="logo" src="/images/ico/logo.png"></a>
+        
+            <h1 id="site-title" href="index.html">MOVIE KITCHEN</h1>
+
+            <div>
+                <input id="toggle" type="checkbox"></input>
+
+                <label for="toggle" class="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </label>
+
+            <div class="nav">
+                <div class="nav-wrapper">
+                    <nav>
+                        <a href="entree.html">ENTRÉES</a><br>
+                        <a href="plats.html">PLATS</a><br>
+                        <a href="dessert.html">DESSERTS</a><br>
+                        <a href="boissons.html">BOISSON</a>
+                    </nav>
+                </div>
+                
+            </div>
+                     
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- ***TOP KITCHEN ICO **************************************************************-->
+            <div id="top-kitchen">
+            <img src="images/ico/kitchen_top_x2.png" alt="étagère du haut">
+            </div>
+
+            <!-- [RECIPES PART] ---------------------------------------------------------------->           
+            <section class="recipe_section">
+
+                <!-- BLUE FRAME  -------------------------------------->
+                <article class="recipe_box">
+
+                     <!-- INSIDE BLUE FRAME  ---------------->
+                    <div class="recipe_content_box">
+
+                        <!-- TITLE RECIPE ----->
+                        <h1 class="recipe_title"> <span class="color_h1_catg"> PLATS </span> &#124 LES SPAGHETTIS AUX BOULETTES DE VIANDE</h1>
+
+                        <!-- CINE PICTURE ------------->
+                        <div class="recipe_top_img_box">
+                            <img src="images/cinellustration/desk/cine_belle_clochard_screen.jpg" alt="La belle et le clochard">
+                        </div>
+
+                        <!-- NOTICE RECIPE-->
+                        <div class="recipe_notice_box">
+                            
+                            <!-- |navbar notice -->
+                            <div class="notice_top_bar">
+
+                                <!-- |Bouton ingrédient -->
+
+                                <button class="notice_title_box" id="ingredients_title_box" style="display:none">
+                                    <h2 class="notice_title" id="ingredients_title" style="display:none">INGREDIENTS</h2>
+                                </button>
+                                
+                                <button class="notice_title_box" id="ingredients_title_box_select">
+                                    <h2 class="notice_title" id="ingredients_title_select" >INGREDIENTS</h2>
+                                </button>
+                                
+                                <!-- |Bouton préparation -->
+                                <button class="notice_title_box" id="preparation_title_box" >
+                                    <h2 class="notice_title" id="preparation_title">PREPARATION</h2>
+                                </button>
+
+                                <button class="notice_title_box" id="preparation_title_box_select" style="display:none">
+                                    <h2 class="notice_title" id="preparation_title_select" style="display:none">PREPARATION</h2>
+                                </button>
+
+
+
+                                <!-- desactivé pour le moment
+                                <div class="notice_title_box" id="ustensiles_title_box">
+                                    <h2 class="notice_title" id="ustensiles_title">USTENSILES</h2>
+                                </div> -->
+    
+                            </div>
+
+                            <div class="notice_content">
+
+                                <div class="ingredients_box" >
+
+                                    <div class="quantity">
+                                            <p>
+                                                POUR 4 PERSONNES
+                                            </p>
+                                    </div>
+
+                                    <div class="ingredient_text">
+
+                                    <!-- l1 -->
+                                    <p class="bold_recipe"> POUR LES PÂTES :
+                                        <br>
+                                        <br>
+                                    </p>
+
+                                    <div class="ingredient_tab_text">
+                                        <div class="tab_text_1">
+                                            <p>
+                                                Spaghettis : 400g
+                                                <br>
+                                                <br>
+                                            </p>
+                                        </div>
+
+                                        <div class="tab_text_2">
+                                            <p>
+                                                </p>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- l2 -->
+                                    <p>                                             
+                                        POUR LES BOULETTES :
+                                        <br>
+                                        <br>
+                                    </p>
+                                    <!-- l3 -->
+                                    <div class="ingredient_tab_text">
+                                        <div class="tab_text_1">
+                                            <p>
+                                                Bœuf haché : 450 g
+                                                <br> 
+                                                Lait : 50 ml
+                                                <br> 
+                                                Œuf(s) : 1
+                                                <br> 
+                                                Parmesan : 25g                                                <br>
+                                            </p>
+                                        </div>
+
+                                        <div class="tab_text_2">
+                                            <p>
+                                                Chapelure : 25 g
+                                                <br> 
+                                                Ail : 2 gousse(s)
+                                                <br> 
+                                                Oignon(s) : 1
+                                                <br> 
+                                                Persil hâché : 1 c. à soupe
+                                                <br>
+                                                <br>
+
+                                            </p>
+                                        </div>
+                                    </div> 
+                                    <!-- l4 -->
+                                    <p>                                             
+                                        POUR LA SAUCE :
+                                        <br>
+                                        <br> 
+                                    </p>
+                                    <!-- l5 -->
+                                    <div class="ingredient_tab_text">
+
+                                        <div class="tab_text_1">
+                                            <p>
+                                                Ail : 2 gousse(s)
+                                                <br>
+                                                Concentré de tomate : 2 c. à soupe
+                                                <br>
+                                                Laurier : 2 feuilles
+                                                <br>
+                                                Oignon(s) : 1                                                <br>
+                                            </p>
+                                        </div>
+
+                                        <div class="tab_text_2">
+                                            <p>
+                                                Origan séché : 1 c. à soupe
+                                                <br>
+                                                Tomate(s) pelée(s) : 1 boîte(s)
+                                                <br>
+                                                Huile d'olive
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                                                                                          
+                                    </div>
+                        
+                                </div>
+
+                                <div class="preparation_box" style="display: none">
+
+                                    <div class="time_prepa">
+
+                                    <p>Temps total : 1H35mn
+                                    <br>
+                                    <br>
+                                    Préparation : 30mn &#124; <!--Repos : 20mn &#124; --> Cuisson : 1H05mn</p>
+
+                                    </div>
+
+                                    <div class="preparation_text">
+                                
+                                    <p> 
+                                    1. Préparez les boulettes :
+                                    <br>
+                                    <br>
+                                    2. Pelez et hachez l’ail et l’oignon.
+                                    <br>
+                                    <br>
+                                    3. Mélangez tous les ingrédients dans un saladier : l’œuf, la chapelure, la viande, l’ail et l’oignon, le parmesan et le lait. Salez et poivrez.
+                                    <br>
+                                    <br>
+                                    4 Dans une grande sauteuse à bords hauts, faites chauffer l’huile d’olive. Déposez-y les boulettes de viande et laissez dorer quelques minutes sur toutes les faces. Retirez et réservez.
+                                    <br>
+                                    <br>
+                                    5. Formez des boulettes de vos mains mouillées.
+                                    <br>
+                                    <br>
+                                    6. Préparez la sauce :
+                                    <br>
+                                    <br>
+                                    7. Pelez et hachez l’ail et l’oignon.
+                                    <br>
+                                    <br>
+                                    8. Faites-les revenir dans la sauteuse pendant 3 minutes à feu moyen, en remuant. Ajoutez les tomates pelées, le concentré, l’origan, le laurier, salez et poivrez.
+                                    <br>
+                                    <br>
+                                    9. Ajoutez un grand verre d’eau, couvrez et laissez mijoter 30 minutes à feu doux.
+                                    <br>
+                                    <br>
+                                    10. Ajoutez les boulettes et poursuivez la cuisson 30 minutes.
+                                    <br>
+                                    <br>
+                                    11. En fin de cuisson, faites cuire les spaghettis dans un grand volume d’eau bouillante salée. Servez par assiette avec une louche de sauce et de boulettes, puis saupoudrez de parmesan.
+                                    </p>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- desactivé pour le moment
+                                <div class="ustentiles_box"></div>
+                                 -->  
+
+                                <div class="recipe_bottom_img">
+                                <img src="images/plats/desk/spagetthis_table.jpg" alt="Spahettis Bolognaise">
+                                </div>
+                            </div>                            
+    
+                        </div>
+
+                        <!-- MOVIR RECIPE--> 
+                        <div class="movie_box">
+
+                            <div class="movie_top_bar">
+    
+                                <div class="movie_title_box">
+                                    <h2 class="movie_title">LE FILM</h2>
+                                </div>
+    
+
+                            </div>
+
+                            <div class="movie_content">
+                                <div class="movie_video">
+                                    <iframe width="90%" height="500" src="https://www.youtube-nocookie.com/embed/j_RQW8YcCo4?si=a9piXZSSosdGzQZr&amp;start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+
+                                <div class="movie_info_button">
+                                    <button id="movie_info_button_open" style="display:none;">&#x23F7;  en savoir +</button>
+
+                                    <button id="movie_info_button_closed">&#9205; en savoir +</button>
+                                </div>
+
+                                <div class="movie_infos" style="display:none;">
+
+                                    <div class="movie_infos_container">
+
+                                   
+                                        <div class="movie_infos_line_1">
+
+
+                                        <p> 
+                                            <span class="movie_infos_bold">Titre:</span> "La Belle et le Clochard" (<span class="movie_infos_italic">"Lady and the Tramp")</span>
+                                            <br>
+                                            <span class="movie_infos_bold">Année :</span> 1955
+                                            <br>
+                                            <span class="movie_infos_bold">Genre :</span> animation, aventure, comédie
+                                        </p>
+
+                                        <div class="imdb_box">
+                                            <img id="imdb_logo" src="images/ico/IMDB_Logo_small.png" href="https://www.imdb.com/title/tt0048280/?ref_=fn_al_tt_1">
+                                        </div>
+                             
+                                        </div>
+
+                                        <p>
+                                        <br>
+                                        <span class="movie_infos_bold"> Réalisation:</span> Clyde Geronimi, Wilfred Jackson, Hamilton Luske
+                                        <br>
+                                        <span class="movie_infos_bold">Scénario:</span> Ward Greene, Erdman Penner, Joe Rinaldi
+                                        <br>
+                                        <span class="movie_infos_bold">Casting:</span> Barbara Luddy, Larry Roberts, Peggy Lee
+                                        <br>
+                                        <br>
+                                        <span class="movie_infos_bold">Synopsis:</span>
+                                        <br>
+                                        Les aventures amoureuses de Lady, ravissant cocker et de Clochard le batard, perturbées par tante Sarah et ses deux adorables chats siamois, Si et Am, diaboliques et sournois.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+    
+
+    
+                        </div>
+                                  
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- CUTLERY TRANSITION ---------------------------------------------------------->
+            <div class="cutlery_trans">
+                <img src="images/ico/ico_spoon.png" alt="">
+            </div>
+
+
+
+
+            
+        </main>
+
+        <!-- Btn "BACK TO UP" -->   
+        <div class="up_btn">
+            <img src="images/ico/arrow-up-solid-1.svg" alt="" class="icone_up_btn">
+        </div>
+
+        <!-- FOOTER -->       
+        <footer>
+        <p class="footer-items">A propos</p>>
+        <p class="footer-items">|</p>
+        <p class="footer-items">Mention légales</p>
+        </footer>
+
+        <!-- SCRIPT JS ----------------->   
+        <script src="JS/up_btn.js"></script>
+        <script src="JS/recipe_switch.js"></script>
+
+    </body>
+
+</html>

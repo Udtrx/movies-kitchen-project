@@ -1,0 +1,216 @@
+/* new version */
+
+#row2/*slideshow*/ {
+    position: relative;
+    width: 500px;
+    height: 310px;
+    border-radius: 25px;
+}
+/* avanced box-shadow*/
+#row2:before,/*supp aussi*/
+#row2:after {
+	position: absolute;
+	bottom:16px;
+	z-index: -10;
+	width: 50%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+#row2:before {
+	left:0;
+	transform: rotate(-4deg);
+}
+#row2:after {
+	right:0;
+	transform: rotate(4deg);
+}
+  /* gestion des dimensions et débordement du conteneur */
+#row2 .container {
+	position:relative;
+	width: 500px;
+	height: 310px;
+	overflow: hidden;
+}
+/* #timeline {
+	position: absolute;
+	background: #999;
+	bottom: 15px;
+	left: 15px;
+	height: 1px;
+	background: rgb(214,98,13);
+	background: rgba(214,98,13,.8);
+	width: 0;
+	/* fonction d'animation */
+	/* animation: timeliner 8s infinite;
+} */
+/* @keyframes timeliner {
+	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
+	20%, 45%, 70%, 90%		{ width: 500px;	}
+} */ */
+/* on prévoit un petit espace gris pour la timeline */
+#row2 .container:after {
+	position:absolute;
+	bottom: 0; left:0;
+	content: " ";
+	width: 100%;
+	height: 1px;
+	background: #999;
+}
+#row2 .slider {
+	position: absolute;
+	left:0; top:0;
+	width: 100%;
+	height: 310px;
+  animation: slider 32s infinite;
+  animation-delay: 2s;
+}
+
+/* annulation des marges sur figure */
+#row2 figure {
+	position:relative;
+	display:inline-block;
+	padding:0; margin:0;
+}
+/* petit effet de vignette sur les images */
+#row2 figure:after {
+	position: absolute;
+	display:block;
+	content: " ";
+	top:0; left:0;
+	width: 100%; height: 100%;
+	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+}
+@keyframes slider {
+  0%,100% {
+    top: 0px;
+  }
+  6.25% {
+    top: -310px;
+  }
+  12.50% {
+    top: -620px;
+  }
+  18.75% {
+    top: -930px;
+  }
+  25% {
+    top: -1240px;
+  }
+  31.25% {
+    top: -1550px;
+  }
+  37.50% {
+    top: -1860px;
+  }
+  43.75% {
+    top: -2170px;
+  }
+  50% {
+    top: -2480px;
+  }
+  56.25% {
+    top: -2790px;
+  }
+  62.50% {
+    top: -3100px;
+  }
+  68.75% {
+    top: -3410px;
+  }
+  75% {
+    top: -3720px;
+  }
+  81.25% {
+    top: -4030px;
+  }
+  87.50% {
+    top: -4340px;
+  }
+  93.75% {
+    top: -4650px;
+  }
+}
+
+
+/*button play*/
+.play_commands {
+	/* positionnement en haut à droite */ 
+	position: absolute;
+	top: 25px; right: 25px;
+	z-index: 10;
+	/* dimensionnement des icônes */
+	width: 22px;
+	height: 22px;
+	text-indent: -9999px;
+	border:0 none;
+	/* placez l'opacité à 1 si vous souhaitez voir les commandes */
+	opacity: 0;
+	/* préparation de transition sur opacicty et right */
+	transition: opacity 1s, right 1s;
+}
+/* on décale play légèrement sur la gauche */
+.play { right: 55px; cursor: default; }
+ 
+/* création de l'icône pause avec 2 pseudos éléments */
+.pause:after,
+.pause:before {
+	position: absolute;
+	display: block;
+	content: " ";
+	top:0;
+	width:38%;
+	height: 22px;
+	background: #fff;
+	background: rgba(255,255,255,0.5);
+}
+.pause:after { right:0; }
+.pause:before {	left:0; }
+ 
+/* création de l'icône play avec des bordures */
+.play {
+	width: 1px; 
+	height: 1px; 
+	/* les transparentes forment la flèche */
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 20px solid #fff; 
+	border-left: 20px solid rgba(255,255,255,0.5); 
+	/* renseignez 1 pour voir l'icône de suite */
+	opacity: 0;
+}
+ 
+/* apparition du bouton pause au survole */
+/* apparition des boutons au focus */
+#row2:hover .pause,
+.play_commands:focus {
+	opacity: 1;
+	outline: none;
+}
+
+/* redémarrer les animations */
+#sl_play:target ~ #row2 .slider,
+#sl_play:target ~ #row2 figcaption,
+#sl_play:target ~ #row2 #timeline,
+#sl_play:target ~ #row2 .dots_commands li:first-child a:after {
+	animation-play-state: running;
+}
+
+/* stopper les animation */
+.sl_command:target ~ #row2 .slider,
+.sl_command:target ~ #row2 figcaption,
+.sl_command:target ~ #row2 #timeline,
+.sl_command:target ~ #row2 .dots_commands li:first-child a:after {
+	animation-play-state: paused;
+}
+ 
+
+ 
+/* switch entre les boutons */
+.sl_command:target ~ #row2 .pause 		{ opacity:0; }
+#sl_play:target ~ #row2:hover .pause,
+#sl_play:target ~ #row2 .pause:focus 	{ opacity:1; }
+.sl_command:target ~ #row2 .play 		{ opacity:1; right: 25px; cursor: pointer; }
+#sl_play:target ~ #row2 .play 			{ opacity:0; right: 55px; cursor: default; }

@@ -1,0 +1,55 @@
+/* bouton entrées*/
+
+#button_entree{
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-image: url("/images/ico/ico_plate_entrees.png");
+    transition: 0.1s;
+}
+
+#button_entree:hover{
+    background-image: url("/images/ico/ico_plate_entrees_b.png");
+}
+
+/* bouton plats*/
+
+#button_plats{
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-image: url("/images/ico/ico_plate_plats.png");
+    transition: 0.1s;
+}
+
+#button_plats:hover{
+    background-image: url("/images/ico/ico_plate_plats_b.png");
+}
+
+/* bouton dessert*/
+
+#button_dessert{
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-image: url("/images/ico/ico_plate_desserts.png");
+    transition: 0.1s;
+}
+
+#button_dessert:hover{
+    background-image: url("/images/ico/ico_plate_desserts_b.png");
+}
+
+/* bouton boisson*/
+
+#button_boissons{
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-image: url("/images/ico/ico_plate_boissons.png");
+    transition: 0.1s;
+}
+
+#button_boissons:hover{
+    background-image: url("/images/ico/ico_plate_boissons_b.png");
+}

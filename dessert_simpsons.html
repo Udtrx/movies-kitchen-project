@@ -1,0 +1,325 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">  
+<!-- BACK --> 
+    <head>
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- FEUILLES CSS -->
+        <link rel="stylesheet" href="/CSS/reset.css">
+        <link rel="stylesheet" href="/CSS/common_elements.css">
+        <link rel="stylesheet" href="/CSS/style_recipe.css">
+        <link rel="stylesheet" href="/CSS/slider.css">
+        <link rel="stylesheet" href="/CSS/hover.css">
+        <link rel="stylesheet" href="/CSS/up_btn.css">
+
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,700;1,400&family=Holtwood+One+SC&family=Inter:wght@300;400;600&family=Quicksand&display=swap" rel="stylesheet">
+
+        <title>Les Simpsons</title> 
+    </head>
+
+<!-- FRONT -->
+    <body>
+        
+        <!-- HEADER -->
+        <header class="header">
+
+            <a href="index.html"><img id="logo" src="/images/ico/logo.png"></a>
+        
+            <h1 id="site-title" href="index.html">MOVIE KITCHEN</h1>
+
+            <div>
+                <input id="toggle" type="checkbox"></input>
+
+                <label for="toggle" class="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </label>
+
+            <div class="nav">
+                <div class="nav-wrapper">
+                    <nav>
+                        <a href="entree.html">ENTRÉES</a><br>
+                        <a href="plats.html">PLATS</a><br>
+                        <a href="dessert.html">DESSERTS</a><br>
+                        <a href="boissons.html">BOISSON</a>
+                    </nav>
+                </div>
+                
+            </div>
+                     
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- ***TOP KITCHEN ICO **************************************************************-->
+            <div id="top-kitchen">
+            <img src="images/ico/kitchen_top_x2.png" alt="étagère du haut">
+            </div>
+
+            <!-- [RECIPES PART] ---------------------------------------------------------------->           
+            <section class="recipe_section">
+
+                <!-- BLUE FRAME  -------------------------------------->
+                <article class="recipe_box">
+
+                     <!-- INSIDE BLUE FRAME  ---------------->
+                    <div class="recipe_content_box">
+
+                        <!-- TITLE RECIPE ----->
+                        <h1 class="recipe_title"> <span class="color_h1_catg"> DESSERT </span> &#124 LES DONUTS D'HOMER</h1>
+
+                        <!-- CINE PICTURE ------------->
+                        <div class="recipe_top_img_box">
+                            <img src="images/cinellustration/desk/cine_simpsons_screen.jpg" alt="Les Simpsons">
+                        </div>
+
+                        <!-- NOTICE RECIPE-->
+                        <div class="recipe_notice_box">
+                            
+                            <!-- |navbar notice -->
+                            <div class="notice_top_bar">
+
+                                <!-- |Bouton ingrédient -->
+
+                                <button class="notice_title_box" id="ingredients_title_box" style="display:none">
+                                    <h2 class="notice_title" id="ingredients_title" style="display:none">INGREDIENTS</h2>
+                                </button>
+                                
+                                <button class="notice_title_box" id="ingredients_title_box_select">
+                                    <h2 class="notice_title" id="ingredients_title_select" >INGREDIENTS</h2>
+                                </button>
+                                
+                                <!-- |Bouton préparation -->
+                                <button class="notice_title_box" id="preparation_title_box" >
+                                    <h2 class="notice_title" id="preparation_title">PREPARATION</h2>
+                                </button>
+
+                                <button class="notice_title_box" id="preparation_title_box_select" style="display:none">
+                                    <h2 class="notice_title" id="preparation_title_select" style="display:none">PREPARATION</h2>
+                                </button>
+
+
+
+                                <!-- desactivé pour le moment
+                                <div class="notice_title_box" id="ustensiles_title_box">
+                                    <h2 class="notice_title" id="ustensiles_title">USTENSILES</h2>
+                                </div> -->
+    
+                            </div>
+
+                            <div class="notice_content">
+
+                                <div class="ingredients_box" >
+
+                                    <div class="quantity">
+                                            <p>
+                                                POUR 20 PERSONNES
+                                            </p>
+                                    </div>
+
+                                    <div class="ingredient_text">
+
+                                        <!-- l1 --> <!--
+                                        <p class="bold_recipe"> POUR LES PÂTES :
+                                            <br>
+                                            <br>
+                                        </p> -->
+
+                                        <div class="ingredient_tab_text">
+                                            <div class="tab_text_1">
+                                                <p>
+                                                    700 g de farine
+                                                    <br>
+                                                    1 c. à c. de sel ou sel fin
+                                                    <br>
+                                                    150 g de sucre
+                                                    <br>
+                                                    125 g de beurre
+                                                    <br>
+                                                    25 cl de lait
+                                                </p>
+                                            </div>
+
+                                            <div class="tab_text_2">
+                                                <p>
+                                                    2 oeufs
+                                                    <br>
+                                                    1 c. à s. de levure de boulanger fraîche
+                                                    <br>
+                                                    8 g de levure chimique
+                                                    <br>
+                                                    1 sachet de sucre vanillé
+                                                </p>
+
+                                            </div>
+
+                                        </div>
+                                                                                                       
+                                    </div>
+                        
+                                </div>
+
+                                <div class="preparation_box" style="display: none">
+
+                                    <div class="time_prepa">
+                                    <p>Temps total : 1H
+                                    <br>
+                                    <br>
+                                    Préparation : 30mn  &#124;  Repos : 1H  &#124;  Cuisson : 30mn</p>
+                                    </div>
+
+                                    <div class="preparation_text">
+                                
+                                        <p>
+                                            1. Commencez par travailler le sucre et les oeufs, bien les blanchir, rajouter le sucre vanille.
+                                            <br>
+                                            <br>
+                                            2. Faire fondre le beurre dans le lait, y rajouter la levure fraîche pour la dissoudre puis verser le liquide tiédi dans le mélange de sucre. Rajouter le sel et la levure chimique, et continuez à mélanger (à l'ancienne pour moi càd avec mes mains ! ).
+                                            <br>
+                                            <br>
+                                            Rajoutez progressivement la farine, la pâte doit se décoller des parois de votre bol, pétrir pendant une dizaine de minutes ( ben oui c'est du sport tout ça !).
+                                            <br>
+                                            <br>
+                                            3. Bien couvrir le bol et le mettre dans un endroit à l'abri de l'air froid pour laisser la pâte gonfler une bonne heure.
+                                            <br>
+                                            <br>
+                                            4. Après une heure, récupérer votre pâte, farinez le plan de travail et la dégazer en la travaillant un peu.
+                                            <br>
+                                            <br>
+                                            5. Former des petites boules de la taille d'un oeuf, puis les aplatir (technique perso: avec le rouleau donner un coup de rouleau en long , puis un en large = rond parfait, sinon ré-arranger à la main). A l'aide d'un bouchon réaliser le trou au milieu du rond.
+                                            <br>
+                                            <br>
+                                            6. Recouvrir et laissez reposer encore une heure.
+                                            <br>
+                                            <br>
+                                            7. Faire chauffer de l 'huile dans une poêle profonde (attention l'huile doit être très chaude; faire un test avec une petite boulette de pâte). Déposer délicatement vos disques, quand ils remontent et qu'ils ont pris une belle coloration dorée, les retourner. Déposer les donuts cuits sur du papier absorbant pour en retirer toute l'huile.
+                                            <br>
+                                            <br>
+                                            8. Garnir de sucre, de fondant coloré ou simplement de chocolat fondu, c'est la partie qu'il faut laisser aux enfants, chacun pouvant personnaliser son propre donut :)
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- desactivé pour le moment
+                                <div class="ustentiles_box"></div>
+                                 -->  
+
+                                <div class="recipe_bottom_img">
+                                <img src="images/plats/desk/donuts_screen.jpg" alt="Les donuts d'Homer">
+                                </div>
+                            </div>                            
+    
+                        </div>
+
+                        <!-- MOVIR RECIPE--> 
+                        <div class="movie_box">
+
+                            <div class="movie_top_bar">
+    
+                                <div class="movie_title_box">
+                                    <h2 class="movie_title">LE FILM</h2>
+                                </div>
+    
+
+                            </div>
+
+                            <div class="movie_content">
+                                <div class="movie_video">
+                                    <iframe width="90%" height="500" src="https://www.youtube.com/embed/1VbdISs8zbE?si=NeG7n6TSVql8QoWn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+
+                                <div class="movie_info_button">
+                                    <button id="movie_info_button_open" style="display:none;">&#x23F7;  en savoir +</button>
+
+                                    <button id="movie_info_button_closed">&#9205; en savoir +</button>
+                                </div>
+
+                                <div class="movie_infos" style="display:none;">
+
+                                    <div class="movie_infos_container">
+
+                                   
+                                        <div class="movie_infos_line_1">
+
+
+                                        <p> 
+                                            <span class="movie_infos_bold">Titre:</span> "Les Simpson" <!-- (<span class="movie_infos_italic">"Lady and the Tramp")</span> -->
+                                            <br>
+                                            <span class="movie_infos_bold">Année :</span> 1989 - ....
+                                            <br>
+                                            <span class="movie_infos_bold">Genre :</span> animation, comédie
+                                        </p>
+
+                                        <div class="imdb_box">
+                                            <img id="imdb_logo" src="images/ico/IMDB_Logo_small.png" href="https://www.imdb.com/title/tt0048280/?ref_=fn_al_tt_1">
+                                        </div>
+                             
+                                        </div>
+
+                                        <p>
+                                            <br>
+                                            <span class="movie_infos_bold"> Création:</span> Matt Groening
+                                            <br>
+                                            <span class="movie_infos_bold">Casting:</span> Dan Castellaneta, Nancy Cartwright, Julie Kavner
+                                            <br>
+                                            <br>
+                                            <span class="movie_infos_bold">Synopsis:</span>
+                                            <br>
+                                            Les aventures satiriques d'une famille de classe moyenne dans la ville de Springfield.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+    
+
+    
+                        </div>
+                                  
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- CUTLERY TRANSITION ---------------------------------------------------------->
+            <div class="cutlery_trans">
+                <img src="images/ico/ico_spoon.png">
+            </div>
+
+
+
+
+            
+        </main>
+
+        <!-- Btn "BACK TO UP" -->   
+        <div class="up_btn">
+            <img src="images/ico/arrow-up-solid-1.svg" alt="" class="icone_up_btn">
+        </div>
+
+        <!-- FOOTER -->       
+        <footer>
+        <p class="footer-items">A propos</p>>
+        <p class="footer-items">|</p>
+        <p class="footer-items">Mention légales</p>
+        </footer>
+
+        <!-- SCRIPT JS ----------------->   
+        <script src="JS/up_btn.js"></script>
+        <script src="JS/recipe_switch.js"></script>
+
+    </body>
+
+</html>

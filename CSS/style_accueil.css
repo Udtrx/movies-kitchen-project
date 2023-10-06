@@ -1,0 +1,81 @@
+body{
+
+}
+
+
+/* TOP */
+
+#top-kitchen img {
+    width: 100% ;
+}
+
+
+/* --- MAIN --- */
+
+h1 {
+  padding-top: 0.6em;
+  padding-bottom: 0.3em;
+}
+
+
+/* YELLOW ZONE */
+
+#color-box {
+  box-sizing: content-box;
+  width: 100%;
+  background-color: #FFBA08;
+  padding: 10px 0 10px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* FLEX */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#row1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 4em;
+}
+
+#row2{}
+
+
+.titre {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#plates{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5em;
+}
+
+.button{
+    width: 200px;
+}
+
+/* BOTTOM */
+#bottom {
+
+}
+
+p{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#slogan_smartP{
+  display: none;
+}
+
+#bottom-kitchen{
+  margin-top: 50px;
+  width: 100%;
+}

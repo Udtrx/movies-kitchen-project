@@ -1,0 +1,315 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">  
+<!-- BACK --> 
+    <head>
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- FEUILLES CSS -->
+        <link rel="stylesheet" href="/CSS/reset.css">
+        <link rel="stylesheet" href="/CSS/common_elements.css">
+        <link rel="stylesheet" href="/CSS/style_recipe.css">
+        <link rel="stylesheet" href="/CSS/slider.css">
+        <link rel="stylesheet" href="/CSS/hover.css">
+        <link rel="stylesheet" href="/CSS/up_btn.css">
+        
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,700;1,400&family=Holtwood+One+SC&family=Inter:wght@300;400;600&family=Quicksand&display=swap" rel="stylesheet">
+
+        <title>Les bronzés font du ski</title> 
+    </head>
+
+<!-- FRONT -->
+    <body>
+        
+        <!-- HEADER -->
+        <header class="header">
+
+            <a href="index.html"><img id="logo" src="/images/ico/logo.png"></a>
+        
+            <h1 id="site-title" href="index.html">MOVIE KITCHEN</h1>
+
+            <div>
+                <input id="toggle" type="checkbox"></input>
+
+                <label for="toggle" class="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </label>
+
+            <div class="nav">
+                <div class="nav-wrapper">
+                    <nav>
+                        <a href="entree.html">ENTRÉES</a><br>
+                        <a href="plats.html">PLATS</a><br>
+                        <a href="dessert.html">DESSERTS</a><br>
+                        <a href="boissons.html">BOISSON</a>
+                    </nav>
+                </div>
+                
+            </div>
+                     
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- ***TOP KITCHEN ICO **************************************************************-->
+            <div id="top-kitchen">
+            <img src="images/ico/kitchen_top_x2.png" alt="étagère du haut">
+            </div>
+
+            <!-- [RECIPES PART] ---------------------------------------------------------------->           
+            <section class="recipe_section">
+
+                <!-- BLUE FRAME  -------------------------------------->
+                <article class="recipe_box">
+
+                     <!-- INSIDE BLUE FRAME  ---------------->
+                    <div class="recipe_content_box">
+
+                        <!-- TITLE RECIPE ----->
+                        <h1 class="recipe_title"> <span class="color_h1_catg"> DESSERT </span> &#124 LE CRÊPE AU SUC'</h1>
+
+                        <!-- CINE PICTURE ------------->
+                        <div class="recipe_top_img_box">
+                            <img src="images/cinellustration/desk/cine_bronzes_screen.jpg" alt="Les bronzés font du ski">
+                        </div>
+
+                        <!-- NOTICE RECIPE-->
+                        <div class="recipe_notice_box">
+                            
+                            <!-- |navbar notice -->
+                            <div class="notice_top_bar">
+
+                                <!-- |Bouton ingrédient -->
+
+                                <button class="notice_title_box" id="ingredients_title_box" style="display:none">
+                                    <h2 class="notice_title" id="ingredients_title" style="display:none">INGREDIENTS</h2>
+                                </button>
+                                
+                                <button class="notice_title_box" id="ingredients_title_box_select">
+                                    <h2 class="notice_title" id="ingredients_title_select" >INGREDIENTS</h2>
+                                </button>
+                                
+                                <!-- |Bouton préparation -->
+                                <button class="notice_title_box" id="preparation_title_box" >
+                                    <h2 class="notice_title" id="preparation_title">PREPARATION</h2>
+                                </button>
+
+                                <button class="notice_title_box" id="preparation_title_box_select" style="display:none">
+                                    <h2 class="notice_title" id="preparation_title_select" style="display:none">PREPARATION</h2>
+                                </button>
+
+
+
+                                <!-- desactivé pour le moment
+                                <div class="notice_title_box" id="ustensiles_title_box">
+                                    <h2 class="notice_title" id="ustensiles_title">USTENSILES</h2>
+                                </div> -->
+    
+                            </div>
+
+                            <div class="notice_content">
+
+                                <div class="ingredients_box" >
+
+                                    <div class="quantity">
+                                            <p>
+                                                POUR 2 PERSONNES
+                                            </p>
+                                    </div>
+
+                                    <div class="ingredient_text">
+
+                                        <!-- l1 --> <!--
+                                        <p class="bold_recipe"> POUR LES PÂTES :
+                                            <br>
+                                            <br>
+                                        </p> -->
+
+                                        <div class="ingredient_tab_text">
+                                            <div class="tab_text_1">
+                                                <p>
+                                                    Farine : 500g
+                                                    <br>
+                                                    Lait entier: 500 cl
+                                                    <br>
+                                                    Oeuf: 2
+                                                    <br>
+                                                    Beurre : 10 g
+                                                </p>
+                                            </div>
+
+                                            <div class="tab_text_2">
+                                                <p>
+                                                    Sucre en poudre ou sucre semoule: 15g
+                                                    <br>
+                                                    Sucre vanillé : 2 sachets
+                                                    <br>
+                                                    Sel : 2 g
+                                                </p>
+
+                                            </div>
+
+                                        </div>
+                                                                                                       
+                                    </div>
+                        
+                                </div>
+
+                                <div class="preparation_box" style="display: none">
+
+                                    <div class="time_prepa">
+                                    <p>Temps total : 12mn
+                                    <br>
+                                    <br>
+                                    Préparation : 10mn &#124; Repos : 1H &#124;  Cuisson : 2mn</p>
+                                    </div>
+
+                                    <div class="preparation_text">
+                                
+                                        <p>
+                                            1. Faites fondre le beurre au micro-ondes.
+                                            <br>
+                                            2. Battez les oeufs avec le lait dans un saladier.
+                                            <br>
+                                            3. Mélangez la farine, le sucre, le sucre vanillé et le sel dans un second saladier puis creusez-y un puits.
+                                            <br>
+                                            4. Versez la moitié du mélange œufs / lait petit à petit en fouettant.
+                                            <br>
+                                            5. Ajoutez le beurre.
+                                            <br>
+                                            6. Versez le reste des oeufs et du lait en continuant à fouetter énergiquement jusqu'à homogénéité.
+                                            <br>
+                                            7. Couvrez la pâte puis laissez-la reposer au moins 1 heure au réfrigérateur avant utilisation.
+                                            <br>
+                                            8. Remuez la pâte puis ajoutez encore un peu de lait si elle a trop épaissi.
+                                            <br>
+                                            9. Faites cuire vos crêpes dans une poêle bien chaude légèrement huilée.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- desactivé pour le moment
+                                <div class="ustentiles_box"></div>
+                                 -->  
+
+                                <div class="recipe_bottom_img">
+                                <img src="images/plats/desk/crepes_table.jpg" alt="Le cake d'amours">
+                                </div>
+                            </div>                            
+    
+                        </div>
+
+                        <!-- MOVIR RECIPE--> 
+                        <div class="movie_box">
+
+                            <div class="movie_top_bar">
+    
+                                <div class="movie_title_box">
+                                    <h2 class="movie_title">LE FILM</h2>
+                                </div>
+    
+
+                            </div>
+
+                            <div class="movie_content">
+                                <div class="movie_video">
+                                    <iframe width="90%" height="500" src="https://www.youtube-nocookie.com/embed/YjAs79ADEIg?si=UimQVse69INN2Prs&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+
+                                <div class="movie_info_button">
+                                    <button id="movie_info_button_open" style="display:none;">&#x23F7;  en savoir +</button>
+
+                                    <button id="movie_info_button_closed">&#9205; en savoir +</button>
+                                </div>
+
+                                <div class="movie_infos" style="display:none;">
+
+                                    <div class="movie_infos_container">
+
+                                   
+                                        <div class="movie_infos_line_1">
+
+
+                                        <p> 
+                                            <span class="movie_infos_bold">Titre:</span> "Les bronzés font du ski" <!-- (<span class="movie_infos_italic">"Lady and the Tramp")</span> -->
+                                            <br>
+                                            <span class="movie_infos_bold">Année :</span> 1979
+                                            <br>
+                                            <span class="movie_infos_bold">Genre :</span> comédie
+                                        </p>
+
+                                        <div class="imdb_box">
+                                            <img id="imdb_logo" src="images/ico/IMDB_Logo_small.png" href="https://www.imdb.com/title/tt0048280/?ref_=fn_al_tt_1">
+                                        </div>
+                             
+                                        </div>
+
+                                        <p>
+                                            <br>
+                                            <span class="movie_infos_bold"> Réalisation:</span> Patrice Leconte
+                                            <br>
+                                            <span class="movie_infos_bold">Scénario:</span> La troupe du splendid
+                                            <br>
+                                            <span class="movie_infos_bold">Casting:</span> Josiane Balasko, Michel Blanc, Marie-Anne Chazel, Christian Clavier, Gérard Jugnot, Thierry Lhermitte, Dominique Lavanant, Bruno Moynot
+                                            <br>
+                                            <br>
+                                            <span class="movie_infos_bold">Synopsis:</span>
+                                            <br>
+                                            Huit touristes qui ont fait connaissance dans un club de vacances en Côte d'Ivoire se retrouvent dans une station de sports d'hiver.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+    
+
+    
+                        </div>
+                                  
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- CUTLERY TRANSITION ---------------------------------------------------------->
+            <div class="cutlery_trans">
+                <img src="images/ico/ico_spoon.png">
+            </div>
+
+
+
+
+            
+        </main>
+
+        <!-- Btn "BACK TO UP" -->   
+        <div class="up_btn">
+            <img src="images/ico/arrow-up-solid-1.svg" alt="" class="icone_up_btn">
+        </div>
+
+        <!-- FOOTER -->       
+        <footer>
+        <p class="footer-items">A propos</p>>
+        <p class="footer-items">|</p>
+        <p class="footer-items">Mention légales</p>
+        </footer>
+
+        <!-- SCRIPT JS ----------------->   
+        <script src="JS/up_btn.js"></script>
+        <script src="JS/recipe_switch.js"></script>
+
+    </body>
+
+</html>

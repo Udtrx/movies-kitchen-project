@@ -1,0 +1,360 @@
+/* *** TOP ************************************************************/
+#top-kitchen img {
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+
+/* =========================================================================
+=  [RECIPE PART]                                                           = 
+===========================================================================*/
+
+.recipe_section{
+    display: flex;
+    justify-content: center;
+}
+
+/* BLUE FRAME ------------------------------------------ */
+.recipe_box{
+    width: 75%;
+    background-color: #03071E;
+    display: flex;
+    justify-content: center;
+    /* margin: 0 13% 0 13%; */
+    border-radius: 20px;
+}
+/* INSIDE BLUE FRAME -------------------------- */
+.recipe_content_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    width: 80%;
+
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++
+|    TOP RECIPE                           |                        
++++++++++++++++++++++++++++++++++++++++++*/
+
+/* |h1 title recipe --------------------- */
+.recipe_title{
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.color_h1_catg{
+    color:#FFBA08;
+}
+
+/* |box cine picture -------------------- */
+.recipe_top_img_box{
+    flex: display;
+    border: solid #FFBA08 3px;
+   
+    border-radius: 30px 30px 0 0;
+}
+
+.recipe_top_img_box img{
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+} /* ?? border sur l'image ?? ça marche pas ??*/
+
+
+/*+++++++++++++++++++++++++++++++++++++++++
+|    NOTICE BOX RECIPE                     |                        
++++++++++++++++++++++++++++++++++++++++++*/
+
+.recipe_notice_box{
+    margin-top: 3em;
+    border: solid #FFBA08 2px;
+    border-radius: 25px 25px 0 0;
+
+}
+
+/* -- |NAVBAR notice| ------------------------------------------------ */
+.notice_top_bar{
+    display: flex;
+    display: center;
+    border-bottom: solid #FFBA08 1px;
+}
+
+.notice_title {
+    text-align: center;
+    font-size: 2em;
+}
+
+.notice_title_box{
+    width: 50%;
+    padding: 1em;
+
+}
+
+/* --- |BOUTON PREPARATION ------------------  */
+#preparation_title{
+    color: #FFBA08;
+}
+
+#preparation_title_box{
+    border: none;
+    border-radius: 0 25px 0 0;
+    background-color: #03071E;
+}
+
+#preparation_title_select{
+    color: #03071E;
+}
+
+#preparation_title_box_select{
+    border: none;
+    border-radius: 0 23px 0 0;
+    background-color: #FFBA08;
+    
+}
+
+/* --- |BOUTON INGREDIENTS -------------------  */
+#ingredients_title{
+    color: #FFBA08;
+}
+
+#ingredients_title_box{
+    border: 2px;
+    border-radius: 25px 0 0 0;
+    background-color: #03071E;
+}
+
+#ingredients_title_select{
+    color: #03071E;
+}
+
+#ingredients_title_box_select{
+    border: none;
+    background-color: #FFBA08;
+    border-radius: 23px 0 0 0;
+}
+
+/* --- |BOUTON USTENSILES desactivé pour le moment --------------------  */
+#ustensiles_title{
+    color: #FFBA08;
+    text-align: center;
+}
+
+#ustensiles_title_box{
+}
+
+/* -- |CONTENTS notice| ---------------------------------------------- */
+.notice_content{
+    
+}
+
+/* -- |"INGREDIENTS" side --------------------------------- */
+.quantity{
+    color: #FFBA08;
+    border-bottom: solid #FFBA08 1px;
+    padding: 2em 0em 2em 2em;
+}
+
+.quantity p{
+    font-size: large;
+}
+
+.bold_recipe{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: medium;
+}
+.ingredient_text{
+    color: white;
+    padding: 2em 2em 0em 2em;
+    line-height: 1.5;
+}
+.padding_ingredients_food{
+    padding-left: 2em;
+}
+
+.ingredient_tab_text{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2em;
+}
+
+.tab_text_1{
+    width: 40%;
+    padding-left: 2em;
+    padding-right: min(1em);
+}
+
+.tab_text_2{
+    border-left: solid #FFBA08 1px;
+    padding-left: 2em;
+}
+
+
+/* -- |"PREPARATION" side --------------------------------- */
+.preparation_box { 
+}
+
+.time_prepa{
+    color: #FFBA08;
+    border-bottom: solid #FFBA08 1px;
+    padding: 1em 0em 1em 2em;
+    line-height: 1.2;
+}
+
+.preparation_text{
+    color: white;
+    padding: 2em 2em 1em 2em;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* -- |IMAGE plat terminé --------------------------------- */
+.recipe_bottom_img{
+    border-top: solid #FFBA08 1px;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 3em 0;
+    padding: 2em 2em 0em 2em;
+}
+.recipe_bottom_img img{
+    border-radius: 25px;
+    width: 100%;
+    
+}
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++
+|    MOVIE BOX RECIPE                     |                        
++++++++++++++++++++++++++++++++++++++++++*/
+
+.movie_box{
+    margin-top: 3em;
+}
+
+.movie_top_bar{
+    display: flex;
+    display: center;
+    border-bottom: solid #FFBA08 1px;
+    
+}
+
+.movie_top_bar div{
+    border-radius: 25px 0 0 0;
+}
+
+/* --- preparation button */
+.movie_title{
+    color: #03071E;
+    text-align: center;
+    font-size: 2em;
+}
+
+.movie_title_box{
+    background-color: #FFBA08;
+    width: 33%;
+    padding: 1em;
+}
+
+.movie_content{
+    border-top: solid #FFBA08 1px;
+    border-right: solid #FFBA08 1px;
+    border-left: solid #FFBA08 1px;;
+    border-bottom: solid #FFBA08 1px;
+    
+}
+
+.movie_video{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5em;
+}
+
+.movie_video_p{
+    display: none;
+}
+
+.movie_video iframe{
+    width: 90%;
+}
+
+.movie_infos{
+    width: 90%;
+    padding: 2em 3em 2em 3em;
+
+}
+
+.movie_info_button{
+    padding: 2em 0 0em 3em;
+}
+
+#movie_info_button_open{
+    color: #FFBA08;
+    background-color: #03071E;
+    border: solid #FFBA08 1px ;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+#movie_info_button_closed{
+    color: #FFBA08;
+    background-color: #03071E;
+    border: solid #FFBA08 1px ;
+    border-radius: 10px;
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+.movie_infos_line_1{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    border-top: solid #FFBA08 1px;
+    padding-top: 1em;
+    
+}
+
+.movie_infos p {
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
+
+.imdb_box img{
+    display: flex;
+    align-items: start;
+}
+
+#imdb_logo{
+    width: 80px;
+    height: 40px;
+}
+
+.movie_infos_bold{
+    font-weight: bold;
+    font-family: 'Courier Prime', monospace;
+}
+
+.movie_infos_italic{
+    font-style: italic;
+    font-family: 'Courier Prime', monospace;
+}
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++
+|    CUTLERY TRANSITION                   |                        
++++++++++++++++++++++++++++++++++++++++++*/
+
+.cutlery_trans{
+    display: flex;
+    justify-content: center;
+    margin: 4em 0 4em 0;
+}
+
+.cutlery_trans img{
+    width: 20%;
+};
